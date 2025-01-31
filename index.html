@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9ed72356ec.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -198,31 +199,50 @@
         </div>
     </section>
     <!-- Arrivle and offer section -->
-    <section class="px-[140px] py-10">
-        <h2 class="text-2xl font-bold text-green-700 mb-6">Arrival & Offers</h2>
-    
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <!-- Large Card -->
-            <div class="bg-green-900 text-white p-6 rounded-lg shadow-lg flex flex-row justify-between md:col-span-2">
-                <div>
-                    <h3 class="text-xl font-bold">DAAWAT <span class="block text-sm font-light">The Finest</span></h3>
+
+<section class="px-[140px] py-10">
+    <h2 class="text-2xl font-bold text-green-700 mb-6">Arrival & Offers</h2>
+
+    <div class="flex flex-col md:flex-row gap-4">
+        <!-- Large Card -->
+        <div class="bg-green-900 text-white p-6 rounded-lg shadow-lg flex justify-between w-full md:w-[780px] h-[344px] relative">
+            <!-- First Container: Logo, Button, Heading -->
+            <div class="flex flex-col justify-between">
+                <div class="flex items-center mb-4">
+                    <img src="c2-assets/dawat-logo.png" alt="Logo" class="mr-3">
+                </div>
                 <button class="bg-green-500 text-white px-4 py-2 rounded mt-2">Cook Exotic Dishes</button>
                 <p class="mt-4 text-lg">UP TO <span class="font-bold">20% OFF</span></p>
-                </div>
-                <img src="c2-assets/dawat-mock-up.png" alt="Daawat Biryani Rice" class=" right-4 bottom-4 w-40">
-                
             </div>
-    
-            <!-- Small Card -->
-            <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg flex flex-col justify-between relative">
-                <img src="https://via.placeholder.com/100" alt="India Gate Rice" class="absolute right-4 bottom-4 w-32">
-                <h3 class="text-xl font-bold">INDIA GATE</h3>
+
+            <!-- Second Container: Image -->
+            <div class="flex items-center">
+                <img src="c2-assets/dawat-mock-up.png" alt="Daawat Biryani Rice" class="w-[23rem]">
+            </div>
+        </div>
+
+        <!-- Small Card -->
+        <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg flex justify-between w-full md:w-[520px] h-[344px] relative">
+            <!-- First Container: Logo, Button, Heading -->
+            <div class="flex flex-col justify-between">
+                <div class="flex items-center mb-4">
+                    <img src="c2-assets/india-gate-logo.png" alt="Logo" class="mr-3">
+                </div>
                 <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">World’s No.1 Rice</button>
                 <p class="mt-4 text-lg">UP TO <span class="font-bold">40% OFF</span></p>
             </div>
+
+            <!-- Second Container: Image -->
+            <div class="flex items-end">
+                <img src="c2-assets/india-gate-mock-up.png" alt="India Gate Rice" class="w-[10rem]">
+            </div>
         </div>
-    </section>
-    <!-- footer -->
+    </div>
+</section>
+
+
+
+    <!-- footer  with a form-->
     <section class="bg-white py-16 px-6 relative">
         <div class="  max-w-5xl mx-auto relative z-10">
             <div class="bg-[#EFE8DB] rounded-lg p-10 flex flex-col md:flex-row items-center justify-between shadow-lg -mb-20">
@@ -241,18 +261,18 @@
     </section>
     
     <!-- Footer -->
-    <footer class="bg-green-700 text-white pt-24 pb-10 px-6 relative z-0">
+    <footer class="bg-[#1A9B03] p-4 text-white pt-24 pb-10 px-6 relative z-0">
         <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Logo & Description -->
             <div>
-                <h3 class="text-lg font-bold">nature's <span class="text-green-300">platter</span></h3>
-                <p class="text-sm mt-2">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="text-[17px] mt-2">Discover a world of treats, toys, and essentials <br> handpicked for your furry friends.</p>
             </div>
     
             <!-- Navigation Links -->
             <div class="space-y-2">
                 <h4 class="font-semibold">Quick Links</h4>
-                <ul class="text-sm space-y-1">
+                <ul class="leading-9 space-y-1 ">
                     <li><a href="#" class="hover:underline">Product</a></li>
                     <li><a href="#" class="hover:underline">Services</a></li>
                     <li><a href="#" class="hover:underline">Contact Us</a></li>
